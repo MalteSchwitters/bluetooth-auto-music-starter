@@ -11,24 +11,35 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Playlist"
-        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="8dp" />
+        android:text="@string/bams"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="@color/colorAccent" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Playlist to start when bluetooth gets connected" />
+        android:text="@string/bamshint"
+        android:textAppearance="@style/TextAppearance.AppCompat.Notification.Line2" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/playlisthint" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="8dp" />
 
     <EditText
         android:id="@+id/txtPlaylist"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="My Autostart Playlist"
+        android:hint="@string/playlisthint2"
         android:inputType="textPersonName" />
 
     <Space
@@ -39,8 +50,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0"
-        android:text="Bluetooth speakers"
+        android:text="@string/speakers"
         android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="8dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/speakershint" />
 
     <Space
         android:layout_width="match_parent"
@@ -57,6 +77,11 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
+            <include
+                layout="@layout/fragment_bluetooth_device"
+                layout_width="match_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
         </LinearLayout>
     </ScrollView>
 

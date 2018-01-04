@@ -8,6 +8,8 @@ import android.content.Intent
 import android.media.AudioManager
 import android.provider.MediaStore
 import android.support.v4.content.ContextCompat.startActivity
+import android.support.v4.media.session.MediaButtonReceiver
+import android.support.v4.media.session.PlaybackStateCompat
 import android.util.Log
 import software.kloud.fridge_android.app.settings.SettingsManager
 

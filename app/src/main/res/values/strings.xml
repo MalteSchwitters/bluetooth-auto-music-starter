@@ -1,7 +1,18 @@
 <resources>
-    <string name="app_name">BluetoothMusicStarter</string>
-    <string name="title_activity_main">MainActivity</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_name">B.A.M.S.</string>
+    <string name="title_activity_main">B.A.M.S.</string>
+    <string name="playlisthint">
+        When a Bluetooth speaker gets connected this playlist will be started. The playlist will
+        always be started with the first song, even if you have set it to shuffle. If you want to
+        start with a random song, just add a short dummy song at first index.
+    </string>
+    <string name="playlist">Playlist</string>
+    <string name="playlisthint2">Name of my Autostart Playlist</string>
+    <string name="speakers">Known Bluetooth speakers</string>
+    <string name="speakershint">
+        List of all known Bluetooth speakers. Unknown speakers will automatically be added to this
+        list. The saved music volume will automatically be applied when the device gets connected.
+    </string>
+    <string name="bamshint"><b>B</b>luetooth Auto Music Starter</string>
+    <string name="bams">B.A.M.S.</string>
 </resources>
