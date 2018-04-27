@@ -23,6 +23,7 @@ class BluetoothBroadcastReceiver: BroadcastReceiver() {
     }
 
     fun handleBluetoothConnect(context: Context?, intent: Intent?) {
+        SettingsManager.loadSettings()
         val device = intent?.getParcelableExtra<BluetoothDevice>(BluetoothDevice.EXTRA_DEVICE)
         if (device != null) {
             Log.d(javaClass.simpleName, "Bluetooth Device connected: " + device.name)
@@ -56,6 +57,7 @@ class BluetoothBroadcastReceiver: BroadcastReceiver() {
     }
 
     fun handleBluetoothDisconnect(context: Context?, intent: Intent?) {
+        SettingsManager.loadSettings()
         Log.d(javaClass.simpleName, "Bluetooth Device disconnected")
         SettingsManager.connectedDevice = null
     }
